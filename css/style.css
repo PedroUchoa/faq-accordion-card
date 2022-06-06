@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+:root{
+    --very-dark-blue:hsl(238, 29%, 16%);
+    --soft-red:hsl(14, 88%, 65%);
+    --soft-violet:hsl(273, 75%, 66%);
+    --soft-blue:hsl(240, 73%, 65%);
+    --very-dark-grayish-blue:hsl(237, 12%, 33%);
+    --dark-grayish-blue:hsl(240, 6%, 50%);
+    --light-grayish-blue:hsl(240, 5%, 91%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 12px;
+    background-color: var(--soft-violet);
+}
+
+.container{
+    background-color: #fff;
+    height: 450px;
+    width: 1050px;
+    margin: 80px auto;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 550px 500px;
+  
+}
+.image{
+    background-image:url(../images/illustration-woman-online-desktop.svg), url(../images/bg-pattern-desktop.svg) ;
+    background-repeat: no-repeat;
+    background-position: -150% 30%,140% 65%;
+    background-size: 500px, 850px;
+    position: relative;
+}   
+
+.image img{
+    position: absolute;
+    top:180px;
+    left: -100px;
+}
+
+.principal h1{
+    font-size: 30px;
+    margin-top: 50px;
+}
+
+.faqs{
+    margin-top: 20px;
+    font-size: 13px;
+    line-height: 20px;
+    width: 450px;
+    color: var(--very-dark-blue);
+}
+
+.faqs ul li{
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--light-grayish-blue);
+    width: 400px;
+}
+
+.faqs ul li p:first-child:hover{
+    cursor: pointer;
+    color: var(--soft-red);
+}
+
+.faqs ul li p:last-child{
+    font-size: 12px;
+    width: 400px;
+    padding-top: 5px;
+    color: var(--dark-grayish-blue);
+}
+
+.faqs ul li:nth-child(2) p:first-child{
+    font-weight: 700;
+}
+
+.faqs ul li:nth-child(2) img{
+    transform: rotate(180deg);
+}
+
+.faqs ul{
+    list-style: none;
+    display: grid;
+    row-gap: 1rem;
+}
+
+.faqs ul li img{
+    float: right;
+    margin-right: 20px;
+    margin-top: 7px;
+}
+
+.none{
+    display: none;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
